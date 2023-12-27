@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS/reset.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/CSS/botao.css">
+    <link rel="stylesheet" href="Assets/CSS/animate.css">
+    <title>Calculadora Teorema de Pitagoras</title>
+</head>
+<body>
+
+    <h1 id="title">Calculadora de Pitagoras</h1>
+
+    <main id="container">
+        <div id="corpo1" class="alinhar corpos-color">
+            <h3>Calcular a medida da Hipotenusa</h3>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <label for="Adjacente"> Valor do Cateto Adjacente:
+                        <input type="number" placeholder="" id="adjacente">
+                    </label>
+                </div>
+                <div class="input-field">
+                    <label for="Oposto"> Valor do Cateto Oposto:
+                        <input type="number" placeholder="" id="oposto">
+                    </label>
+                </div>
+            </div>
+
+            <div ontouchstart="">
+                <button class="botao button">
+                    <a href="#">Calcular</a>
+                </button>
+            </div>
+
+            <div class="resultado">
+                <div class="number">1</div>
+            </div>
+        </div>
+
+        <div id="corpo2" class="corpos-color">
+            <h3>Calcular a medida de um dos catetos</h3>
+
+            <div class="input-box">
+
+                <div class="input-field">
+                    <label for="Cateto">Valor do  <br>Cateto : 
+                        <input type="number" placeholder="" id="cateto">
+                    </label>
+                </div>  
+
+                <div class="input-field">
+                    <label for="Hipotenusa"> Valor da <br>Hipotenusa:
+                        <input type="number" placeholder="" id="hipotenusa"
+                    </label>
+                </div>
+            </div>
+
+            <div ontouchstart="">
+                <button id="botao-2" class="button">
+                    <a href="#">Calcular</a>
+                </button>
+            </div>
+
+            <div class="resultado-2">
+                <div class="number">2</div>
+            </div>
+        </div>
+
+        <div id="corpo3" class="corpos-color">
+            <h3>Comprovar se um triângulo é retângulo</h3>
+            <div class="input-box">
+
+                <div class="input-field">
+                    <label for="Hipotenusa"> Valor da <br> Hipotenusa:
+                        <input type="number" placeholder="" id="hipotenusa-1"
+                    </label>
+                </div>
+                
+                <div class="input-field">
+                    <label for="Cateto"> Valor do Cateto Adjacente:
+                        <input type="number" placeholder="" id="cateto-adjacente">
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <label for="Cateto"> Valor do Cateto Oposto:
+                        <input type="number" placeholder="" id="cateto-oposto">
+                    </label>
+                </div>
+
+            </div>
+
+            <div ontouchstart="">
+                <button id="botao-3" class="button">
+                    <a href="#">Calcular</a>
+                </button>
+            </div>
+
+            <div class="resultado-3">
+                <div class="number">3</div>
+            </div>
+        </div>
+    </div>
+
+        <div class="button-box">
+            <button id="anterior">Anterior</button>
+            <button id="proximo">proximo</button>
+        </div>
+    </main>
+
+    
+    
+    <section>
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+    </section>
+
+    <footer>Criado por &copy; <em>Lucas Lopes</em></footer>
+    
+    <script src="Assets/JS/main.js"></script>
+    <script src="Assets/JS/corpo1.js"></script>
+    <script src="Assets/JS/corpo2.js"></script>
+    <script src="Assets/JS/corpo3.js"></script>
+</body>
+</html>

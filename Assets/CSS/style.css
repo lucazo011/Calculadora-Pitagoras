@@ -1,0 +1,267 @@
+:root {
+    --color-1: #3586ff;
+    --color-2: #B0A8B9;
+
+    --text-color: #fff;
+    --text-color-2: #FF8066;
+    --text-color-3: #000;
+}
+
+.corpos-color {
+    background-color: #fff;
+    border-radius: 8px;
+    
+}
+
+.alinhar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+br {
+    display: block;
+}
+
+body {
+    background-color: var(--color-1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-3);
+    height: 500px;
+    width: 640px; 
+    margin-top: 20px;
+    z-index: 1;
+}
+
+/* CORPO 1 */
+#corpo1{
+    height: inherit;
+    width: inherit;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.number {
+    background-color: var(--text-color-2);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    padding: 5px 15px ;
+    font-weight: 800;
+}
+
+.input-box {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #262626;
+    padding: 5px;
+}
+
+.input-field input {
+    padding: 10px;
+}
+
+
+#corpo1 .resultado {
+    width: 450px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-2);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+
+
+/* CORPO 2 */
+#corpo2 {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    position: relative;
+}
+
+#corpo2 .resultado-2 {
+    width: 450px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-2);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+/* CORPO 3  */
+#corpo3 {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    position: relative;
+}
+#corpo3 .input-box {
+    display: flex;
+    gap: 10px; 
+    padding: 10px;
+}
+
+#corpo3 .resultado-3 {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-2);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+footer {
+    position: absolute;
+    top: 89vh;
+    font-weight: 700;
+}
+
+/* Resposividade */
+
+@media screen and (max-width: 600px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        height: 100vh;
+        text-align: center;
+        position: relative;
+    };
+
+    #title {
+        font-size: 40px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        height: 600px;
+        margin-bottom: 10px;
+    }
+
+    #corpo1 {
+        height: 600px;
+        width: 100%;
+        padding: 10px;
+    } 
+    #corpo1 .resultado {
+        width: 60%;
+    }
+
+    #corpo2 {
+        height: 600px;
+        width: 100%;
+        padding: 10px;
+    }
+    #corpo2 .resultado-2 {
+        width: 60%;
+    }
+
+    
+    #corpo3 {
+        text-align: center;
+        height: 600px;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 7px;
+        margin-top: 10px;
+    }
+
+    #corpo3 .resultado-3 {
+        width: 60%;
+    }
+
+    .input-box {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .input-field {
+        gap: 10px;
+    }
+
+    .number {
+        background-color: var(--text-color);
+        position: absolute;
+        top: -25px;
+        left: 100px;
+        border-radius: 50%;
+        padding: 8px 20px ;
+        font-weight: 800;
+    }
+
+    footer {
+        position:absolute;
+        top: 100vh;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+
+
+
